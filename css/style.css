@@ -1,0 +1,550 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*--------------------*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  width: 1103px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #000000;
+  font-family: Lato;
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  text-align: center;
+}
+
+.header-block {
+  text-align: center;
+}
+
+.menu {
+  padding: 22px;
+  margin: 0 0 95px 0;
+  border-bottom: solid 1px #f2f2f2;
+}
+
+.menu__list li {
+  margin: 0 25px;
+}
+
+.menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__link {
+  color: #3c3c3c;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menu__link:hover {
+  color: #ada074;
+}
+
+.menu__link_act {
+  color: #ada074;
+  font-family: "Lato - Bold";
+  font-weight: 700;
+}
+
+.about {
+  padding: 0 0 60px 0;
+}
+
+.about__header-block {
+  margin: 0 0 70px 0;
+}
+
+.about__body {
+  text-align: center;
+}
+
+.about__row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 0 0 -41.5px;
+}
+
+.about__column {
+  margin: 0 0 30px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  padding: 0 0 0 41.5px;
+}
+
+.about__item {
+  text-align: center;
+  max-width: 260px;
+}
+
+.item__image {
+  width: 92px;
+  height: 92px;
+  border: solid 1px #f3f3f3;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 41px 0;
+}
+
+.item__image_l img {
+  position: relative;
+  left: 5px;
+}
+
+.item__title {
+  color: #000000;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3.52px;
+  text-align: center;
+  margin: 0 0 35px 0;
+}
+
+.item__text {
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.header-block__title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 8.95px;
+  position: relative;
+  padding: 0 0 35px 0;
+}
+
+.header-block__title:after {
+  content: "";
+  width: 81px;
+  height: 1px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -40.5px;
+}
+
+.header-block__subtitle {
+  padding: 37px 0 0 0;
+  max-width: 702px;
+  margin: 0 auto;
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25.89px;
+}
+
+.portfolio {
+  background-color: #f3f3f3;
+  padding: 107px 0;
+}
+
+.portfolio__header-block {
+  margin: 0 0 50px 0;
+}
+
+.porfolio__filter {
+  margin: 0 0 135px 0;
+}
+
+.filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter__item {
+  color: #3c3c3c;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 25px;
+  cursor: pointer;
+}
+
+.filter__item_active {
+  color: #ada074;
+}
+
+.portfolio__items {
+  margin: 0 -15px 64px -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.porfolio__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.portfolio__item {
+  padding: 0 10px;
+}
+
+.portfolio__item img {
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+.portfolio__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn {
+  width: 182px;
+  height: 47px;
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.67px;
+  line-height: 47px;
+}
+
+.btn_b {
+  color: #000;
+  border: 1px solid #000;
+}
+
+.btn_b:after {
+  background-color: #000;
+}
+
+.btn_b:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/*Стиль для партнеров*/
+.partners {
+  background: url("../img/mainblock.jpg")-10px 50%/cover no-repeat;
+}
+
+.partners__title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 1.8px;
+  padding: 100px 0 0 0;
+  text-align: center;
+  margin: 0 0 93px 0;
+}
+
+.partners__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.partners__column {
+  margin: 0 55px;
+  padding: 0 0 105px 0;
+}
+
+/*Стиль для контактов*/
+.contact {
+  padding: 180px 0 80px 0;
+}
+
+.contact__header-block {
+  margin: 0 0 120px 0;
+}
+
+.contact__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -25px;
+}
+
+.contact__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 25px;
+}
+
+.contact__form {
+  text-align: right;
+}
+
+.form-contact__body {
+  display: inline-block;
+  widows: 100%;
+  max-width: 385px;
+}
+
+.form-contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px 70px -15px;
+}
+
+.form-contact__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 15px;
+}
+
+.form-contact__label {
+  text-align: left;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.84px;
+}
+
+.input {
+  position: relative;
+  display: block;
+  background-color: #f8f7f7;
+  font-size: 15px;
+  padding: 0 10px;
+  width: 100%;
+  border-top: 1px solid #000;
+}
+.input:focus {
+  border-top: 1px solid blue;
+}
+
+textarea.input {
+  resize: none;
+  height: 117px;
+  padding: 10px 20px;
+  padding-top: 1px solid #000;
+}
+
+.contact__content {
+  max-width: 260px;
+}
+
+.contact__text {
+  color: #000000;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 40px 0;
+}
+
+.contact__name {
+  font-weight: 700;
+  margin: 0 0 25px 0;
+}
+
+.social {
+  margin: 0 0 15px 0;
+}
+
+.contact__email {
+  font-size: 14px;
+}
+.contact__email a {
+  color: #000;
+  font-weight: 700;
+}
+.contact__email a:hover {
+  text-decoration: underline;
+}
+
+.form__btn {
+  margin: 35px 0 0 0;
+}
+
+/* СТИЛЬ ДЛЯ ПОДВАЛА*/
+.footer {
+  background-color: #3c3c3c;
+  padding: 50px 0;
+}
+
+.footer__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__logo {
+  margin: 0 0 42px 0;
+}
+
+.footer__menu {
+  margin: 0 0 34px 0;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__link {
+  color: #a4a4a4;
+  margin: 0 7px;
+}
+
+.footer__text {
+  color: #6c6c6c;
+  font-family: "Myriad Pro";
+}
